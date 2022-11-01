@@ -76,7 +76,7 @@ resource "aws_instance" "public_inst_1" {
   ami           = "ami-0e6329e222e662a52"
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.dev-public-1.id}"
-  key_name = "key11"
+  key_name = "terraform-project"
   tags = {
     Name = "public_inst_1"
   }
@@ -86,7 +86,7 @@ resource "aws_instance" "public_inst_2" {
   ami           = "ami-062df10d14676e201"
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.dev-public-2.id}"
-  key_name = "key11"
+  key_name = "terraform-project"
   tags = {
     Name = "public_inst_2"
   }
